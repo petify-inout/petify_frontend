@@ -52,7 +52,88 @@ class _HomePageState extends State<HomePage> {
                 'Choose your pet',
                 style: TextStyle(color: Colors.white, fontSize: 16),
               )),
-            )
+            ),
+            SizedBox(
+              height: 40.h,
+            ),
+            Wrap(
+              alignment: WrapAlignment.center,
+              children: [
+                Padding(
+                  padding: const EdgeInsets.all(8.0),
+                  child: ClipRRect(
+                    child: Container(
+                        height: 60, child: Image.asset('assets/dog.jpg')),
+                    borderRadius: BorderRadius.circular(20),
+                  ),
+                ),
+                Padding(
+                  padding: const EdgeInsets.all(8.0),
+                  child: ClipRRect(
+                    child: Container(
+                        height: 60, child: Image.asset('assets/cat.jpg')),
+                    borderRadius: BorderRadius.circular(20),
+                  ),
+                ),
+                Padding(
+                  padding: const EdgeInsets.all(8.0),
+                  child: ClipRRect(
+                    child: Container(
+                        height: 60, child: Image.asset('assets/rat.png')),
+                    borderRadius: BorderRadius.circular(20),
+                  ),
+                ),
+                Padding(
+                  padding: const EdgeInsets.all(8.0),
+                  child: ClipRRect(
+                    child: Container(
+                        height: 60, child: Image.asset('assets/horse.jpg')),
+                    borderRadius: BorderRadius.circular(20),
+                  ),
+                ),
+                Padding(
+                  padding: const EdgeInsets.all(8.0),
+                  child: ClipRRect(
+                    child: Container(
+                        height: 60, child: Image.asset('assets/parrot.jpg')),
+                    borderRadius: BorderRadius.circular(20),
+                  ),
+                ),
+              ],
+            ),
+            SizedBox(
+              height: 15.h,
+            ),
+            Container(
+              width: 433.w,
+              height: 60.h,
+              color: Color(0xff154a63),
+              child: Center(
+                  child: Text(
+                'Consult a Professional',
+                style: TextStyle(color: Colors.white, fontSize: 16),
+              )),
+            ),
+            Container(
+              width: 433.w,
+              height: 60.h,
+              color: Color(0xff154a63),
+              child: Center(
+                  child: Text(
+                'View Previous Predictions',
+                style: TextStyle(color: Colors.white, fontSize: 16),
+              )),
+            ),
+            Container(
+              width: 433.w,
+              height: 60.h,
+              color: Color(0xff154a63),
+              child: Center(
+                  child: Text(
+                'View Consultation Info',
+                style: TextStyle(color: Colors.white, fontSize: 16),
+              )),
+            ),
           ],
         ),
       ),
