@@ -1,10 +1,10 @@
-import 'package:petify/pages/carousel.dart';
-import 'package:petify/pages/homepage.dart';
+import 'package:petify/UI/bottomNavPage.dart';
+import 'package:petify/UI/carousel.dart';
 import 'package:flutter/material.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
-void main() {
+void main() async {
   runApp(MyApp());
 }
 
@@ -13,7 +13,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'Petify',
-      debugShowCheckedModeBanner: true,
+      debugShowCheckedModeBanner: false,
       theme: ThemeData(
         primarySwatch: Colors.blue,
         visualDensity: VisualDensity.adaptivePlatformDensity,
@@ -56,7 +56,7 @@ class _MyHomePageState extends State<MyHomePage> {
     if (onboarding) {
       sharedPreferences.setBool('onboarding', true);
       setState(() {
-        page = new HomePage();
+        page = new BottomNavPage();
       });
     }
   }
